@@ -26,6 +26,9 @@ function areaPoligono(opcion, lado, base, altura) {
         //Es un rectángulo
         resultado = base * altura;
         return resultado;
+    } else {
+        console.log("Solo aceptamos numeros entre el 1 y el 3.")
+        return 0;
     }
     
 }
