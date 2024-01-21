@@ -47,7 +47,7 @@ print("|-------------------|")
 #convertimos la respuesta a entero
 respuesta = int(input("Selecciona una opcion del menu:"))
 
-
+#Creamos los condicionales
 if respuesta == 0:
     #Salir
     print("El programa ha finalizado.")
@@ -73,4 +73,5 @@ elif respuesta == 3:
     resultado = area_poligono(3, altura, base, lado)
     print("El area del rectangulo es " + str(resultado))
 else:
+    #Error
     print("La opcion seleccionada no existe, por favor, utiliza numero del 0 al 3 y no uses letras.")
