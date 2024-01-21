@@ -17,13 +17,13 @@ def area_poligono(opcion, altura, base, lado):
         #Triangulo
         resultado = (base * altura) / 2
         return resultado
-    if opcion == 2:
+    elif opcion == 2:
         #Cuadrado
         resultado = lado * lado
         return resultado
-    if opcion == 3:
+    elif opcion == 3:
         #Rectangulo
-        resutlado = base * altura
+        resultado = base * altura
         return resultado
     else:
         #Error
@@ -43,5 +43,34 @@ print("|1. Triangulo       |")
 print("|2. Cuadrado        |")
 print("|3. Rectangulo      |")
 print("|-------------------|")
-respuesta = input("Selecciona una opcion del menu:")
 
+#convertimos la respuesta a entero
+respuesta = int(input("Selecciona una opcion del menu:"))
+
+
+if respuesta == 0:
+    #Salir
+    print("El programa ha finalizado.")
+elif respuesta == 1:
+    #Triangulo
+    print("Has seleccionado la opcion del triangulo.")
+    base = float(input("Dame la base del triangulo:"))
+    altura = float(input("Dame la altura del triangulo:"))
+    resultado = area_poligono(1, altura, base, lado)
+    print("El area del triangulo es " + str(resultado))
+
+elif respuesta == 2:
+    #Cuadrado
+    print("Has seleccionado la opcion del cuadrado.")
+    lado = float(input("Dame el lado del cuadrado:"))
+    resultado = area_poligono(2, altura, base, lado)
+    print("El area del cuadrado es " + str(resultado))
+elif respuesta == 3:
+    #Rectangulo
+    print("Has seleccionado la opcion del rectangulo.")
+    base = float(input("Dame la base del rectangulo:"))
+    altura = float(input("Dame la altura del rectangulo:"))
+    resultado = area_poligono(3, altura, base, lado)
+    print("El area del rectangulo es " + str(resultado))
+else:
+    print("La opcion seleccionada no existe, por favor, utiliza numero del 0 al 3 y no uses letras.")
