@@ -16,7 +16,6 @@ public class EsPrimo {
     public static void main(String[] args) {
         //Llamamos a la función del scanner
         Scanner sc = new Scanner(System.in);
-
         //Creamos las variables que necesitemos
         int i = 0;
 
