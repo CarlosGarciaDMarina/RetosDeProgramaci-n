@@ -73,7 +73,6 @@ public class Calculadora {
                         resultado = sumar(num1, num2);
                         //Mostramos por pantalla
                         System.out.println("El resultado de sumar los numeros " + num1 + " y " + num2 + " es: " + resultado);
-
                         break;
                     case 2:
                     //Restar
