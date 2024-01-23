@@ -48,14 +48,14 @@ try {
             console.log(`Resultado: ${numero1 * numero2}`);
             break;
         case '/':
-            // Verificar la división por cero
+            // Verificamos si la división es por cero
             if (numero2 === 0) {
                 throw new Error("No se puede dividir por cero.");
             }
             console.log(`Resultado: ${numero1 / numero2}`);
             break;
         default:
-            throw new Error("Operación no válida.");
+            throw new Error("Operación no válida. Has introducido un simbolo no valido.");
     }
 } catch (error) {
     // Capturar y manejar cualquier error
