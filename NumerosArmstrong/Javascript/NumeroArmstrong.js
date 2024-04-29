@@ -24,7 +24,6 @@
  */
 
 // Creamos una funcion que verifique si un número es armstrong
-
 function esArmstrong(num) {
     // Convertimos el número a cadena para trabajar con los digitos
     let numeroCadena = num.toString();

@@ -15,5 +15,4 @@ function imprimirX(tamaño) {
     }
 }
 
-// Ejemplo de uso:
-imprimirX(5); // Puedes ajustar el tamaño según lo necesites
+imprimirX(5); // Ajustamos el tamaño
